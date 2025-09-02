@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Tilaa pannukakku</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <nav>
+      <a href="./orders/oerders.html">View All Orders</a>
+    </nav>
+    <main>
+      <div class="container">
+        <div class="image-container">
+          <img src="pancake.jpeg" alt="Delicious pancakes" />
+          <div class="price-banner"><span id="totalPrice">5.00€</span></div>
+        </div>
+
+        <div class="form-container">
+          <h2>modify yourpancake</h2>
+
+          <form id="pancakeForm">
+            <!-- Asiakkaan nimi -->
+            <label for="customerName">Your name:</label>
+            <input
+              type="text"
+              id="customerName"
+              placeholder="Enter your name"
+            />
+
+            <!-- Pannukakun tyyppi -->
+            <label for="type">Select pancake :</label>
+            <select id="type">
+              <option data-price="5">Klassinen 5€</option>
+              <option data-price="6">Suklaa 6€</option>
+              <option data-price="7">Mustikka 7€</option>
+            </select>
+
+            <!-- Täytteet -->
+            <div id="Täytteet">
+              <h3>Valitse täytteet (1€ / kpl):</h3>
+              <label
+                ><input type="checkbox" class="topping" data-price="1" />
+                Pähkinät
+              </label>
+              <label
+                ><input type="checkbox" class="topping" data-price="1" />
+                Banaani
+              </label>
+              <label
+                ><input type="checkbox" class="topping" data-price="1" />
+                Siirappi
+              </label>
+            </div>
+
+            <!-- Lisukkeet -->
+            <h3>Valitse lisukkeet:</h3>
+            <label
+              ><input type="checkbox" class="extra" data-price="2" />
+              Kermavaahto + 2€</label
+            >
+            <label
+              ><input type="checkbox" class="extra" data-price="3" /> Jäätelö +
+              3€</label
+            >
+
+            <!-- Toimitustapa -->
+            <h3>Choose delivery method:</h3>
+            <label
+              ><input
+                type="radio"
+                name="delivery"
+                class="delivery"
+                data-price="0"
+                checked
+              />
+              Syö täällä</label
+            >
+            <label
+              ><input
+                type="radio"
+                name="delivery"
+                class="delivery"
+                data-price="0"
+              />
+              Ota mukaan</label
+            >
+            <label
+              ><input
+                type="radio"
+                name="delivery"
+                class="delivery"
+                data-price="5"
+              />
+              Toimitus (+ 5€)</label
+            >
+
+            <!-- Kokonaishinnan näyttäminen -->
+            <h3>Kokonaishinta: <span id="totalPriceDisplay">5.00€</span></h3>
+
+            <!-- Tarkista tilaus -nappi -->
+            <button type="button" id="seeOrder">
+              Tarkista tilauksen tiedot
+            </button>
+          </form>
+
+          <!-- Tilauksen yhteenvedon esittäminen -->
+          <div id="orderSummary">
+            <h3>Tilauksen yhteenveto</h3>
+            <p id="summaryText">Tietosi tulevat tähän.</p>
+          </div>
+        </div>
+      </div>
+    </main>
+    <section id="ingredients">
+      <h2>ingredients</h2>
+
+      <ul id="ingredientList"></ul>
+      <input type="text" id="newIngredient" placeholder="add new ingredient" />
+      <button id="addIngredient">Add</button>
+
+      <p
+        id="orderMessage"
+        style="color: green; font-weight: bold; margin-top: 10px"
+      ></p>
+    </section>
+
+    <section id="steps">
+      <h2>Cooking steps</h2>
+      <ul>
+        <li><input type="checkbox" /><span>Mix all ingredients.</span></li>
+        <li><input type="checkbox" /><span>Heat the pan.</span></li>
+        <li><input type="checkbox" /><span>Pour butter into the pan.</span></li>
+        <li><input type="checkbox" /><span>Flip the pan cake</span></li>
+        <li><input type="checkbox" /><span>Serve hot</span></li>
+      </ul>
+    </section>
+
+    <script src="script.js"></script>
+  </body>
+</html>

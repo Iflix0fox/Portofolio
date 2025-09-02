@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <link rel="stylesheet" href="styles.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:ital@0;1&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <main>
+      <div class="div1">
+        <form action="/submit" method="POST" class="form">
+          <h1>Sign up</h1>
+          <p>It`s free and only takes a minute</p>
+          <div class="form">
+            <label for="firstname">First Name</label>
+            <input type="text" name="firstname" id="lastname" required />
+
+            <label for="lastname">Last Name</label>
+            <input type="text" name="lastname" id="firstname" required />
+
+            <label for="email">Email</label>
+            <input type="email" name="email" id="email" required />
+
+            <label for="password">Password</label>
+            <input type="password" name="password" id="password" required />
+
+            <label for="confpassword">Confirm Password</label>
+            <input
+              type="password"
+              name="confpassword"
+              id="confpassword"
+              required
+            />
+
+            <button>Sign in</button>
+
+            <p id="terms">
+              By clicking "sign Up" button, you agree to our
+              <a
+                href="https://media1.tenor.com/m/bgBQwUxX8VkAAAAd/cat-meme-laughing-gif.gif"
+                target="_blank"
+                >Terms & Conditions</a
+              >
+              and<a
+                href="https://media1.tenor.com/m/bgBQwUxX8VkAAAAd/cat-meme-laughing-gif.gif"
+                target="_blank"
+                >Pirvecy policy</a
+              >
+            </p>
+          </div>
+        </form>
+      </div>
+      <p id="haveAccount">
+        Already have an account?
+        <a
+          href="https://media1.tenor.com/m/bgBQwUxX8VkAAAAd/cat-meme-laughing-gif.gif"
+          target="_blank"
+        >
+          Login here</a
+        >
+      </p>
+    </main>
+  </body>
+</html>

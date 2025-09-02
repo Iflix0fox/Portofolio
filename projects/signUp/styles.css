@@ -1,0 +1,91 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: green;
+  margin-top: 30px;
+  font-family: "Raleway", Verdana, sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: coral;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+main {
+  margin: 50px auto;
+  width: 300px;
+}
+
+/* form settings */
+.div1 {
+  background-color: white;
+  border-radius: 10px;
+  text-align: center;
+  margin-bottom: 20px;
+  padding: 20px;
+}
+
+.div1 h1,
+.div1 p {
+  margin-bottom: 20px;
+}
+
+label {
+  display: block;
+  text-align: left;
+  font-size: 10px;
+  color: gray;
+  margin-bottom: 5px;
+}
+
+input {
+  width: 100%;
+  margin-bottom: 20px;
+  padding: 10px;
+  border: 1px solid gray;
+  border-radius: 5px;
+}
+
+button {
+  background-color: coral;
+  color: white;
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  width: 80%;
+}
+
+#terms {
+  font-size: 0.75em;
+}
+
+#haveAccount {
+  color: white;
+  text-align: center;
+}
+/* .div2 input {
+  padding: 12px;
+  width: 100%;
+  border-radius: 10px;
+  border-color: rgb(159, 157, 157);
+  margin-bottom: 10px;
+} */
+
+/* .div2 {
+  width: 90%;
+} */
+
+/* .form {
+  padding: 10 px;
+  border-color: ;
+} */

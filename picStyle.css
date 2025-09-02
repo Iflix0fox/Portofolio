@@ -1,0 +1,45 @@
+/* Galleria container to center and wrap pics */
+.galleria {
+  display: flex; /* arrange pics in a row */
+  flex-wrap: wrap; /* wrap to next line if needed */
+  gap: 2rem; /* space between pics */
+  justify-content: center; /* center the pics */
+  margin-top: 3rem;
+}
+
+/* Individual pic cards */
+.pics {
+  background-color: black;
+  padding: 10px;
+  border: 5px solid #b74b4b;
+  border-radius: 20px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  width: 300px; /* fixed width for each card */
+  text-align: center; /* center text */
+}
+
+/* Make the pic "pop" on hover */
+.pics:hover {
+  transform: scale(1.05); /* slightly bigger */
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3); /* subtle shadow */
+}
+
+/* Image inside card */
+.pics img {
+  width: 100%; /* fills the card width */
+  height: auto;
+  border-radius: 15px;
+}
+
+/* Links inside pic */
+.pics a:link,
+.pics a:visited {
+  display: block;
+  margin-top: 10px;
+  font-size: 1.6rem;
+  text-decoration: none;
+  color: #b74b4b;
+  width: 100px;
+  margin-left: auto;
+  margin-right: auto;
+}

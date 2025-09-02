@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="favicon.ico" type="image/x-icon" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="picStyle.css" />
+    <title>Portfolio Website</title>
+  </head>
+  <body>
+    <header>
+      <button id="menuToggle">☰</button>
+
+      <a href="/index.html" class="logo">Ahmad</a>
+
+      <nav>
+        <a href="/index.html" class="active"> Home</a>
+        <a href="https://github.com/Iflix0fox" target="_blank">Github</a>
+
+        <a href="#contact">Contact</a>
+        <button id="themeToggle">🌙</button>
+      </nav>
+    </header>
+
+    <section class="home">
+      <div class="home-img">
+        <img src="./images/FB_IMG_1575885496693.jpg" alt="" />
+      </div>
+
+      <div class="home-content">
+        <h1>Hi, It's <span>Ahmad</span></h1>
+        <h3 class="typing-text">
+          <span id="typed-text"></span><span class="cursor">|</span>
+        </h3>
+
+        <p>
+          I'm passionate about coding and love diving into creative projects
+          where I can build something from scratch. I'm currently learning web
+          development using HTML, CSS, and JavaScript, and I really enjoy making
+          interactive websites and small games.
+        </p>
+
+        <div class="social-icons">
+          <a
+            href="https://www.instagram.com/ah.4al?igsh=OWJpcWhiejZ1aXU%3D&utm_source=qr"
+            target="_blank"
+            ><i id="instagram" class="fa-brands fa-instagram"></i></a
+          ><a
+            href="https://discordapp.com/users/701776677386059826."
+            target="_blank"
+            ><i id="discordapp" class="fa-brands fa-discord"></i></a
+          ><a
+            href="https://www.linkedin.com/in/ahmad-al-azzawi-74bb8b357/"
+            target="_blank"
+            ><i class="fa-brands fa-linkedin"></i></a
+          ><a href="https://github.com/Iflix0fox" target="_blank"
+            ><i class="fa-brands fa-github"></i
+          ></a>
+        </div>
+
+        <a href="#" class="btn">Hire me</a>
+      </div>
+    </section>
+
+    <h1 class="myPorject">My projects</h1>
+    <div class="galleria">
+      <div class="pics">
+        <img src="./images/pancake.png" alt="pancake" />
+        <div class="links">
+          <a href="#" class="open-modal" data-modal="modal1">show</a>
+          <a href="/projects/pancake/index.html" target="_blank">open</a>
+        </div>
+      </div>
+
+      <div class="pics">
+        <img src="./images/zoo.png" alt="zoo" />
+        <div class="links">
+          <a href="#" class="open-modal" data-modal="modal2">show</a>
+          <a href="/projects/zoo/index.html" target="_blank">open</a>
+        </div>
+      </div>
+
+      <div class="pics">
+        <img src="/images/signUp.png" alt="signup" />
+        <div class="links">
+          <a href="#" class="open-modal" data-modal="modal3">show</a>
+          <a href="/projects/signUp/inex.html" target="_blank">open</a>
+        </div>
+      </div>
+
+      <div class="pics">
+        <img src="./images/flexFest.png" alt="flexfest" />
+        <div class="links">
+          <a href="#" class="open-modal" data-modal="modal4">show</a>
+          <a href="/projects/flexFest/index.html" target="_blank">open</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- All modals in one container -->
+    <div class="modals">
+      <div class="modal" id="modal1">
+        <div class="modal-content">
+          <span class="close">&times;</span>
+          <h2>Pancake Project</h2>
+          <p>Details about the Pancake project...</p>
+          <img src="./images/pancake.png" alt="pancake" />
+        </div>
+      </div>
+
+      <div class="modal" id="modal2">
+        <div class="modal-content">
+          <span class="close">&times;</span>
+          <h2>Zoo Project</h2>
+          <p>Details about the Zoo project...</p>
+          <img src="./images/zoo.png" alt="zoo" />
+        </div>
+      </div>
+
+      <div class="modal" id="modal3">
+        <div class="modal-content">
+          <span class="close">&times;</span>
+          <h2>Sign up Project</h2>
+          <p>Details about the sign up project...</p>
+          <img src="./images/signUp.png" alt="zoo" />
+        </div>
+      </div>
+
+      <div class="modal" id="modal4">
+        <div class="modal-content">
+          <span class="close">&times;</span>
+          <h2>Flex fest Project</h2>
+          <p>Details about the Flex fest project...</p>
+          <img src="./images/flexFest.png" alt="zoo" />
+        </div>
+      </div>
+    </div>
+
+    <section id="contact">
+      <h1>Contact Me</h1>
+      <form action="https://formspree.io/f/xkgvrwkd" method="POST">
+        <input type="text" name="name" placeholder="Your Name" required />
+        <input type="email" name="email" placeholder="Your Email" required />
+        <textarea
+          name="message"
+          rows="5"
+          placeholder="Your Message"
+          required
+        ></textarea>
+        <button type="submit">Send</button>
+      </form>
+      <p id="formMessage" style="display: none; color: #b74b4b">
+        Thanks! I will contact you soon.
+      </p>
+    </section>
+
+    <button id="backToTop">↑</button>
+
+    <script src="script.js"></script>
+  </body>
+</html>

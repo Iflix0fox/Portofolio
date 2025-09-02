@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>All Orders</title>
+    <link rel="stylesheet" href="../style.css" />
+    <link rel="stylesheet" href="orders.css" />
+  </head>
+  <body>
+    <nav>
+      <a href="../index.html">Place New Order</a>
+    </nav>
+
+    <h1>All Orders</h1>
+
+    <div class="filter-container">
+      <label for="filter-status">Filter by Status:</label>
+      <select id="filter-status">
+        <option value="all">All Orders</option>
+        <option value="waiting">Waiting</option>
+        <option value="ready">Ready</option>
+        <option value="delivered">Delivered</option>
+      </select>
+    </div>
+
+    <div id="ordersContainer">
+      <!-- Orders will be inserted here by JS -->
+    </div>
+
+    <button id="clear-orders" class="danger-btn">Clear All Orders</button>
+
+    <script src="orders.js" defer></script>
+  </body>
+</html>
