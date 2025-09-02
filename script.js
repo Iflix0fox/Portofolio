@@ -11,16 +11,14 @@ menuToggle.addEventListener("click", () => {
   nav.classList.toggle("active");
 });
 
-// Typing animation
-const typingText = document.querySelector(".typing-text span");
-const cursor = document.querySelector(".cursor");
-
 const words = ["Web Developer", "Web Designer"];
 let wordIndex = 0;
 let charIndex = 0;
 let typingDelay = 150;
 let erasingDelay = 100;
 let newWordDelay = 2000; // Delay between words
+
+const typingText = document.querySelector("#typed-text"); // Make sure you have this element in HTML
 
 function type() {
   if (charIndex < words[wordIndex].length) {
@@ -38,22 +36,15 @@ function erase() {
     charIndex--;
     setTimeout(erase, erasingDelay);
   } else {
-    wordIndex = (wordIndex + 1) % words.length;
+    wordIndex++;
+    if (wordIndex >= words.length) wordIndex = 0; // Loop back to first word
     setTimeout(type, typingDelay);
   }
 }
 
-// Cursor blink
-setInterval(() => {
-  cursor.style.opacity = cursor.style.opacity == 0 ? 1 : 0;
-}, 500);
-
+// Start the typing effect
 document.addEventListener("DOMContentLoaded", () => {
-  if (words.length) setTimeout(type, newWordDelay);
-});
-
-document.addEventListener("DOMContentLoaded", () => {
-  if (words.length) setTimeout(type, newWordDelay);
+  setTimeout(type, newWordDelay);
 });
 
 //modals
